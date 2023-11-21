@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasktracker-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tasktracker
+  template:
+    metadata:
+      labels:
+        app: tasktracker
+    spec:
+      containers:
+        - name: tasktracker
+          image: yigitkoii/tasktracker:latest
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: yigitdocker

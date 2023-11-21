@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@_koi/web3.js": "^0.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "events": "^3.3.0",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^7.5.3",
+    "node-cron": "^3.0.2"
+  },
+  "scripts": {
+    "dockerize": "docker build . -t DOCKER/REPO && docker push DOCKER/REPO"
+  },
+  "name": "k2-task-tracker",
+  "version": "1.0.0",
+  "description": "A task tracker for KOII Network",
+  "main": "index.js",
+  "repository": "",
+  "author": "Yigit Dincsoy <yigit@koii.network>",
+  "license": "MIT"
+}
